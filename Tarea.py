@@ -53,12 +53,16 @@ while True:
         else:
             print("Ingrese el nombre del producto a vender:")
             nombre_producto = input()
+            encontrado = False
             for producto in lista_productos:
                 if producto.nombre == nombre_producto:
+                    encontrado = True
                     print("Ingrese la cantidad a vender:")
                     cantidad_vender = int(input())
                     producto.vender(cantidad_vender)
                     break
+        if encontrado == False:
+            print("Producto no encontrado.")
     elif opcion == 0:
         print("Gracias por usar el sistema.")
         break
