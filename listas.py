@@ -68,7 +68,8 @@ while True:
         print("Ingrese su nombre:")
         nombre = input()
     elif opcion == 2:
-        print("Los numeros de",Personas.nombre "son: ",Personas.numero)
+        print("Los numeros de",Personas.nombre)
+        print("Son: ", Personas.numero)
     elif opcion == 3:
         print("gracias")
         break
